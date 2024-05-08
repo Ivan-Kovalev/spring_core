@@ -1,7 +1,6 @@
 package pro.sky.spring_core.service.impl;
 
 import org.springframework.stereotype.Service;
-import pro.sky.spring_core.model.Product;
 import pro.sky.spring_core.repository.ShoppingCartDAO;
 import pro.sky.spring_core.service.ShoppingService;
 
@@ -17,12 +16,12 @@ public class ShoppingServiceImpl implements ShoppingService {
     }
 
     @Override
-    public List<Product> getAllProduct() {
+    public List<Integer> getAllProduct() {
         return repository.getAllProduct();
     }
 
     @Override
-    public void add(List<Product> product) {
+    public void add(List<Integer> product) {
         repository.addProduct(product);
     }
 }
