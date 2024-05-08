@@ -22,7 +22,7 @@ public class ShoppingServiceImpl implements ShoppingService {
     }
 
     @Override
-    public void add(Product product) {
+    public void add(List<Product> product) {
         repository.addProduct(product);
     }
 }

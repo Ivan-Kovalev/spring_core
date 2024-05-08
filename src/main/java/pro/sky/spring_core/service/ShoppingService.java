@@ -7,5 +7,5 @@ import java.util.List;
 public interface ShoppingService {
     List<Product> getAllProduct();
 
-    void add(Product product);
+    void add(List<Product> product);
 }
